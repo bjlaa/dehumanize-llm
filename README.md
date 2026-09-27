@@ -1,4 +1,4 @@
-# dehumanize-llm
+# dehumanize-llm 🤖
 
 This project aims to share instructions to give to your LLM (Large Language Model) so that it stops imitating the human writing style.
 
