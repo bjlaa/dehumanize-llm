@@ -27,44 +27,72 @@ Here's a demo of a few prompts along with the LLM outputs using the instructions
 ### User prompt 1
 
 ```
-Hi there! Can you tell me what's the weather in Paris? Thank you!
+Hi there! Can you list the European countries please ?
 ```
 
 LLM answer:
 
 ```
-Weather data retrieved for Paris (Saint-Merri, Île-de-France, France) from the third-party endpoint `wttr.in` (data source: World Weather Online). Observation time reported by the source: 11:39 AM local.
+Europe, 44 sovereign states (UN-recognized):
 
-## Current conditions
+**Northern Europe**
+- Denmark
+- Estonia
+- Finland
+- Iceland
+- Ireland
+- Latvia
+- Lithuania
+- Norway
+- Sweden
+- United Kingdom
 
-| Parameter | Value |
-|---|---|
-| Temperature | 24 °C / 75 °F |
-| Feels like | 21 °C / 70 °F |
-| Condition | Cloudy |
-| Cloud cover | 81 % |
-| Humidity | 36 % |
-| Wind | 12 km/h from S (184°) |
-| Pressure | 1016 hPa |
-| Visibility | 10 km |
-| UV index | 3 |
-| Precipitation | 0.0 mm |
+**Western Europe**
+- Austria
+- Belgium
+- France
+- Germany
+- Liechtenstein
+- Luxembourg
+- Monaco
+- Netherlands
+- Switzerland
 
-## Forecast
+**Southern Europe**
+- Albania
+- Andorra
+- Bosnia and Herzegovina
+- Croatia
+- Greece
+- Italy
+- Malta
+- Montenegro
+- North Macedonia
+- Portugal
+- San Marino
+- Serbia
+- Slovenia
+- Spain
+- Vatican City
 
-| Date | Min / Max | Condition summary | Sun hours | UV |
-|---|---|---|---|---|
-| 2026-09-27 | 17 °C / 26 °C | Overcast, no significant precipitation | 2.0 | 3 |
-| 2026-09-28 | 18 °C / 24 °C | Overcast; patchy rain around 12:00, thundery outbreaks possible around 18:00 | 1.0 | 3 |
-| 2026-09-29 | 19 °C / 28 °C | Overcast morning, partly cloudy afternoon | 3.0 | 2 |
+**Eastern Europe**
+- Belarus
+- Bulgaria
+- Czechia
+- Hungary
+- Moldova
+- Poland
+- Romania
+- Russia (transcontinental)
+- Slovakia
+- Ukraine
 
-## Notes on reliability
+Notes on boundary cases:
+- **Transcontinental states**: Russia, Turkey, Kazakhstan, Azerbaijan, and Georgia span the conventional Europe/Asia divide. Turkey, Kazakhstan, and Azerbaijan are commonly excluded from European counts; Georgia and Cyprus are sometimes included (Cyprus is an EU member but geographically in Asia).
+- **Partially recognized**: Kosovo.
+- **Dependencies/territories**: Faroe Islands, Gibraltar, Guernsey, Isle of Man, Jersey, Svalbard, Åland.
 
-- The data originates from a free, non-guaranteed third-party endpoint; accuracy, update interval, and observation timestamp are not verified by this program.
-- Values in the table are a direct transcription of the API payload, converted to the units shown.
-- This request is unrelated to the current project (`dehumanize-llm`); no files were read or modified.
-
-For authoritative and safety-relevant forecasts, consult the official meteorological service, e.g. Météo-France.
+Different sources produce counts of 44 to 51 depending on which of the above are counted.
 ```
 
 ### User prompt 2
